@@ -13,5 +13,12 @@ NOTES:
 
 void swap(int *a, int *b)
 {
-	
+	int p, q;
+	p = *a;
+	q = *b;
+	p = p + q;
+	q = p - q;
+	p = p - q;
+	 *a=p;
+	 *b=q;
 }
